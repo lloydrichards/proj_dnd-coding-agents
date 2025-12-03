@@ -28,6 +28,8 @@ When forming a party for a quest, agents fill different roles:
 
 _Leads the quest as primary implementer._
 
+- **[`@warrior`](agent/warrior.md) (Spec Enforcer)**: Follows specifications to
+  the letter. Leads feature implementation quests.
 - **[`@paladin`](agent/paladin.md) (TDD Champion)**: Follows the sacred
   Red-Green-Refactor oath. Leads feature development quests.
 - **[`@oracle`](agent/oracle.md) (Database Seer)**: Designs and manages database
