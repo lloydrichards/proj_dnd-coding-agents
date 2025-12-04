@@ -15,7 +15,7 @@ tools:
   todowrite: true
   todoread: true
   webfetch: true
-  context7_*: true
+  context7*: true
 permission:
   bash:
     "rm -rf *": deny
@@ -62,7 +62,7 @@ Adapts to target project structure. Discovers test location from `vitest.config.
 
 ### 2. TDD Loop (Per Test Case)
 
-```
+```txt
 RED    → Write failing test → Run → Confirm FAIL
 GREEN  → Write minimal code → Run → Confirm PASS
 REFACTOR → Improve code    → Run → Confirm still PASS
@@ -169,4 +169,4 @@ export function isValidEmail(email: string): boolean {
 ## Reference Materials
 
 - **[Vitest Patterns](../.patterns/vitest/vitest-patterns.md)** - Mocking, fixtures, advanced patterns
-- **Vitest Docs:** https://vitest.dev
+- **Vitest Docs:** <https://vitest.dev>

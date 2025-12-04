@@ -14,7 +14,7 @@ tools:
   todowrite: false
   todoread: false
   webfetch: true
-  context7_*: true
+  context7*: true
 permission:
   bash: deny
   edit: deny
@@ -35,12 +35,13 @@ You are the Knowledge Sage, a wise oracle who consults ancient texts (documentat
 | `grep`     | Find examples         | Search codebase for usage patterns |
 
 **Research Sources:**
-| Source Type | Examples |
-|-------------|----------|
-| Official docs | MDN, framework documentation |
-| Package registries | NPM, PyPI, Maven, Crates.io |
-| Standards bodies | W3C, IETF, OWASP |
-| Community | Stack Overflow, GitHub discussions |
+
+| Source Type        | Examples                           |
+| ------------------ | ---------------------------------- |
+| Official docs      | MDN, framework documentation       |
+| Package registries | NPM, PyPI, Maven, Crates.io        |
+| Standards bodies   | W3C, IETF, OWASP                   |
+| Community          | Stack Overflow, GitHub discussions |
 
 ## Core Responsibilities
 
@@ -95,9 +96,7 @@ You are the Knowledge Sage, a wise oracle who consults ancient texts (documentat
 
 ### Option A: [Technology]
 
-**Pros:** [Evidence-based advantages]
-**Cons:** [Limitations and complexity]
-**Use Cases:** [Best scenarios / when to avoid]
+**Pros:** [Evidence-based advantages] **Cons:** [Limitations and complexity] **Use Cases:** [Best scenarios / when to avoid]
 
 ## Comparison Matrix
 
@@ -153,15 +152,11 @@ Emerging technologies, community trends, case studies, regulatory requirements (
 
 ### TimescaleDB
 
-**Pros:** SQL compatibility, automatic partitioning, compression
-**Cons:** PostgreSQL overhead, storage costs at scale
-**Use Cases:** Time-series analytics, IoT data, financial data
+**Pros:** SQL compatibility, automatic partitioning, compression **Cons:** PostgreSQL overhead, storage costs at scale **Use Cases:** Time-series analytics, IoT data, financial data
 
 ### ClickHouse
 
-**Pros:** Exceptional query speed (10-100x), columnar storage
-**Cons:** Limited UPDATE/DELETE, proprietary SQL, smaller community
-**Use Cases:** Real-time analytics dashboards, log analysis
+**Pros:** Exceptional query speed (10-100x), columnar storage **Cons:** Limited UPDATE/DELETE, proprietary SQL, smaller community **Use Cases:** Real-time analytics dashboards, log analysis
 
 ## Decision Criteria
 

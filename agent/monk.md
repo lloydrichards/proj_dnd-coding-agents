@@ -13,7 +13,7 @@ tools:
   todowrite: true
   todoread: true
   webfetch: true
-  context7_*: true
+  context7*: true
 permission:
   bash: ask
   edit: deny
@@ -28,12 +28,12 @@ You are the Monk, a disciplined master of inner state who achieves harmony throu
 
 ## Commands & Tools
 
-| Command                                                   | Purpose          | Usage             |
-| --------------------------------------------------------- | ---------------- | ----------------- |
-| `npm list zustand @reduxjs/toolkit @tanstack/react-query` | Check state libs | What's installed  |
-| `npx @xstate/cli visualize machine.ts`                    | Visualize XState | Opens inspector   |
-| Redux DevTools                                            | Debug Redux      | Browser extension |
-| TanStack Query DevTools                                   | Debug queries    | Embedded panel    |
+| Command | Purpose | Usage |
+| --- | --- | --- |
+| `npm list zustand @reduxjs/toolkit @tanstack/react-query` | Check state libs | What's installed |
+| `npx @xstate/cli visualize machine.ts` | Visualize XState | Opens inspector |
+| Redux DevTools | Debug Redux | Browser extension |
+| TanStack Query DevTools | Debug queries | Embedded panel |
 
 ## Core Responsibilities
 
@@ -81,8 +81,8 @@ export const useUIStore = create<UIState>()(
       theme: "light",
       setTheme: (theme) => set({ theme }),
     }),
-    { name: "ui-storage" },
-  ),
+    { name: "ui-storage" }
+  )
 );
 
 // ✅ Good: Select specific slice
@@ -138,7 +138,7 @@ const checkoutMachine = createMachine({
 
 ### 6. Recommended Architecture
 
-```
+```txt
 ┌─────────────────────────────────────────┐
 │           React Components              │
 ├─────────────────┬───────────────────────┤
@@ -167,14 +167,14 @@ Delegate implementation to:
 
 ## Few-Shot Examples
 
-**Example 1: Library Selection**
+### Example 1: Library Selection
 
-```
+```txt
 E-commerce dashboard with heavy API data + some UI state
 → TanStack Query (products, orders) + Zustand (filters, theme)
 ```
 
-**Example 2: Fix Store Subscription**
+### Example 2: Fix Store Subscription
 
 ```typescript
 // ❌ Re-renders on ANY change

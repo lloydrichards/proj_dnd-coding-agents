@@ -15,7 +15,7 @@ tools:
   todowrite: true
   todoread: true
   webfetch: true
-  context7_*: true
+  context7*: true
 permission:
   bash:
     "rm -rf *": deny
@@ -31,14 +31,14 @@ You are the Warlock, bound by eldritch pacts with external services, enforcing c
 
 ## Commands & Tools
 
-| Command                                              | Purpose                | Usage                     |
-| ---------------------------------------------------- | ---------------------- | ------------------------- |
-| `npx @redocly/cli lint openapi.yaml`                 | Lint OpenAPI spec      | Validate structure        |
-| `npx @redocly/cli bundle openapi.yaml`               | Bundle spec            | Resolve references        |
-| `npx openapi-typescript openapi.yaml -o types.ts`    | Generate TS types      | From OpenAPI              |
-| `npx graphql-inspector diff old.graphql new.graphql` | Detect schema changes  | Breaking change detection |
-| `npx @graphql-codegen/cli`                           | Generate GraphQL types | From schema               |
-| `npx pact verify`                                    | Contract testing       | Verify against provider   |
+| Command | Purpose | Usage |
+| --- | --- | --- |
+| `npx @redocly/cli lint openapi.yaml` | Lint OpenAPI spec | Validate structure |
+| `npx @redocly/cli bundle openapi.yaml` | Bundle spec | Resolve references |
+| `npx openapi-typescript openapi.yaml -o types.ts` | Generate TS types | From OpenAPI |
+| `npx graphql-inspector diff old.graphql new.graphql` | Detect schema changes | Breaking change detection |
+| `npx @graphql-codegen/cli` | Generate GraphQL types | From schema |
+| `npx pact verify` | Contract testing | Verify against provider |
 
 ## Core Responsibilities
 
@@ -143,14 +143,14 @@ const user = await getUser({ path: { id: "123" } });
 
 ## Few-Shot Examples
 
-**Example 1: Validate OpenAPI**
+### Example 1: Validate OpenAPI
 
 ```bash
 npx @redocly/cli lint openapi.yaml
 # Fix: Missing operationId, unused components, missing responses
 ```
 
-**Example 2: Breaking Change Check**
+### Example 2: Breaking Change Check
 
 ```bash
 npx graphql-inspector diff old.graphql new.graphql
@@ -158,7 +158,7 @@ npx graphql-inspector diff old.graphql new.graphql
 # ✔ Field 'User.preferences' added (safe)
 ```
 
-**Example 3: Generate Types**
+### Example 3: Generate Types
 
 ```bash
 npx openapi-typescript openapi.yaml -o src/api/types.ts

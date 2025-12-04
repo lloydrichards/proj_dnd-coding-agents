@@ -16,7 +16,7 @@ tools:
   todowrite: false
   todoread: false
   webfetch: false
-  devtools_*: true
+  devtools*: true
 permission:
   edit: allow
   bash:
@@ -32,16 +32,23 @@ You are the Performance Alchemist, a master of transmutation who transforms slug
 
 ## Commands & Tools
 
-| Command                      | Purpose           | Usage                             |
-| ---------------------------- | ----------------- | --------------------------------- |
-| `npm run build -- --analyze` | Bundle analysis   | Visualize bundle composition      |
-| `lighthouse`                 | Web vitals audit  | Performance, accessibility scores |
-| `devtools_performance_*`     | Browser profiling | CPU, memory, network              |
-| `EXPLAIN ANALYZE`            | Query analysis    | Database performance              |
-| `time`                       | Execution timing  | Measure command duration          |
-| `grep`                       | Find patterns     | Locate performance anti-patterns  |
+| Command | Purpose | Usage |
+| --- | --- | --- |
+| `npm run build -- --analyze` | Bundle analysis | Visualize bundle composition |
+| `lighthouse` | Web vitals audit | Performance, accessibility scores |
+| `devtools_performance_*` | Browser profiling | CPU, memory, network |
+| `EXPLAIN ANALYZE` | Query analysis | Database performance |
+| `time` | Execution timing | Measure command duration |
+| `grep` | Find patterns | Locate performance anti-patterns |
 
-**Profiling Tools:** | Tool | Purpose | |------|---------| | Chrome DevTools | JavaScript profiling, memory | | Lighthouse | Core Web Vitals | | WebPageTest | Real-world loading | | Database EXPLAIN | Query optimization |
+**Profiling Tools:**
+
+| Tool             | Purpose                      |
+| ---------------- | ---------------------------- |
+| Chrome DevTools  | JavaScript profiling, memory |
+| Lighthouse       | Core Web Vitals              |
+| WebPageTest      | Real-world loading           |
+| Database EXPLAIN | Query optimization           |
 
 ## Core Responsibilities
 

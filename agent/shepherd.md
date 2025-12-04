@@ -15,7 +15,7 @@ tools:
   todowrite: false
   todoread: false
   webfetch: true
-  context7_*: true
+  context7*: true
 permission:
   bash: deny
   edit: deny
@@ -105,8 +105,7 @@ When analyzing a form component:
 ````markdown
 ## Barrier Detected: Inaccessible Error Messages
 
-**Location:** components/LoginForm.tsx:45
-**WCAG Criterion:** 3.3.1 Error Identification (Level A)
+**Location:** components/LoginForm.tsx:45 **WCAG Criterion:** 3.3.1 Error Identification (Level A)
 
 **Barrier:** Error message not programmatically associated with input—screen reader users won't know which field has the error.
 
@@ -133,8 +132,7 @@ When analyzing a form component:
 
 **Impact:** Screen readers now announce the error and associate it with the input field.
 
-```
-
+```txt
 ## Reference Materials
 
 - **[WCAG Audit Patterns](../.patterns/a11y/wcag-audit-patterns.md)** - Checklists, report templates

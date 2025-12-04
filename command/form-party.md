@@ -94,8 +94,10 @@ Output the recommended party in this format:
 
 ## Quest Analysis
 
-**Type:** [Quest Type] **Complexity:** [Simple/Standard/Epic] **Technologies:**
-[Detected/mentioned technologies] **Risk Level:** [Low/Medium/High]
+- **Type:** [Quest Type]
+- **Complexity:** [Simple/Standard/Epic]
+- **Technologies:** [Detected/mentioned technologies]
+- **Risk Level:** [Low/Medium/High]
 
 ## Recommended Party
 
@@ -144,13 +146,11 @@ Output the recommended party in this format:
 ## Quick Reference
 
 Invoke this party with:
-```
 
 @agent1 @agent2 @agent3 [your instructions]
 
-```
-
 Or individually:
+
 - @agent1 for [task type]
 - @agent2 for [task type]
 ```
@@ -159,7 +159,7 @@ Or individually:
 
 After presenting the recommendation, ask:
 
-```
+```txt
 ## Party Confirmation
 
 Does this party composition suit your quest?
@@ -187,14 +187,12 @@ syntax:
 Your party is assembled and ready. Begin your quest with:
 
 **Full Party Invocation:**
-```
 
 @sentinel @judge @ts-wizard Review and test the authentication module, ensuring
 type safety and security best practices.
 
-```
-
 **Or invoke individually as needed:**
+
 - `@sentinel` - For security review
 - `@judge` - For test coverage
 - `@ts-wizard` - For type system guidance
@@ -214,26 +212,6 @@ May your quest be successful, adventurer!
   recommendations
 - **Risk-appropriate**: High-risk quests need reviewers (@sentinel) and testers
   (@judge)
-
-## Quest Type to Agent Mapping
-
-| Quest Type     | Likely Party Members                                    |
-| -------------- | ------------------------------------------------------- |
-| Feature        | @scout (explore), @judge (test), @sentinel (review)     |
-| Feature (TDD)  | @paladin (red-green-refactor), @sentinel (review)       |
-| Bug Fix        | @tracker (debug), @scout (find), @judge (regression)    |
-| Refactor       | @scout (analyze), @sentinel (review), @alchemist (perf) |
-| Documentation  | @bard (write), @scout (discover)                        |
-| Testing        | @judge (test), @scout (coverage gaps)                   |
-| Testing (TDD)  | @paladin (test-first), @judge (advanced patterns)       |
-| Performance    | @alchemist (optimize), @tracker (profile)               |
-| Security       | @sentinel (audit), @tracker (vulnerabilities)           |
-| Accessibility  | @warden (audit), @sentinel (review)                     |
-| Research       | @sage (research), @scout (explore)                      |
-| TypeScript     | @ts-wizard (consult), @sentinel (review)                |
-| Styling/CSS    | @painter (CSS), @tw-wizard (Tailwind)                   |
-| Web Components | @lit-wizard (consult), @warden (a11y)                   |
-| Effect-TS      | @effect-wizard (consult), @sentinel (review)            |
 
 ## Example Invocations
 

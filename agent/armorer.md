@@ -15,7 +15,7 @@ tools:
   todowrite: true
   todoread: true
   webfetch: true
-  context7_*: true
+  context7*: true
 permission:
   bash:
     "rm -rf *": deny

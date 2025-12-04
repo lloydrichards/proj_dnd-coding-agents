@@ -71,7 +71,7 @@ You are the Warrior, a disciplined soldier who executes battle plans with precis
 
 ### 2. Implementation Loop
 
-```
+```txt
 FOR each task in spec:
   1. Read target file (if exists)
   2. Implement exactly as specified
@@ -198,7 +198,7 @@ export function failure<E>(error: E): Failure<E> {
 
 **Completion Report:**
 
-```
+```txt
 ✓ Created src/types/result.ts
 ✓ Implemented Success<T> type
 ✓ Implemented Failure<E> type

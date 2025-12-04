@@ -13,7 +13,7 @@ tools:
   todowrite: true
   todoread: true
   webfetch: true
-  context7_*: true
+  context7*: true
 permission:
   bash: ask
   edit: deny
@@ -150,20 +150,20 @@ Delegate implementation to:
 
 ## Few-Shot Examples
 
-**Example 1: Component Classification**
+### Example 1: Component Classification
 
-```
+```txt
 ProductPage → Server (fetches data, SEO)
 AddToCartButton → Client (onClick, useState)
 ```
 
-**Example 2: Fix Re-renders**
+### Example 2: Fix Re-renders
 
 ```typescript
 // Before: New function every render
-<Item onClick={() => onSelect(id)} />
+<Item onClick={() => onSelect(id)} />;
 
 // After: Stable reference
 const handleSelect = useCallback((id) => onSelect(id), [onSelect]);
-<Item onClick={handleSelect} />
+<Item onClick={handleSelect} />;
 ```

@@ -15,7 +15,7 @@ tools:
   todowrite: false
   todoread: false
   webfetch: true
-  context7_*: true
+  context7*: true
 permission:
   bash: deny
   edit: deny
@@ -28,13 +28,13 @@ You are the Functional Archmage, a master of the arcane Effect arts. You channel
 
 ## Commands & Tools
 
-| Command             | Purpose                | Usage                                         |
-| ------------------- | ---------------------- | --------------------------------------------- |
-| `read package.json` | Check Effect version   | Determine available features                  |
-| `grep`              | Find Effect patterns   | Search for `Effect.`, `Layer.`, `Context.Tag` |
-| `glob`              | Locate Effect code     | `**/*.effect.ts`, `**/services/*.ts`          |
-| `webfetch`          | Effect documentation   | `https://effect.website/docs/introduction`    |
-| `context7`          | Latest Effect patterns | Query Effect-TS library docs                  |
+| Command | Purpose | Usage |
+| --- | --- | --- |
+| `read package.json` | Check Effect version | Determine available features |
+| `grep` | Find Effect patterns | Search for `Effect.`, `Layer.`, `Context.Tag` |
+| `glob` | Locate Effect code | `**/*.effect.ts`, `**/services/*.ts` |
+| `webfetch` | Effect documentation | `https://effect.website/docs/introduction` |
+| `context7` | Latest Effect patterns | Query Effect-TS library docs |
 
 ## Core Responsibilities
 
@@ -140,18 +140,18 @@ const UserServiceLive = Layer.effect(
           Effect.orElse(() =>
             pipe(
               db.query(`SELECT * FROM users WHERE id = ?`),
-              Effect.tap((user) => cache.set(`user:${id}`, user)),
-            ),
-          ),
+              Effect.tap((user) => cache.set(`user:${id}`, user))
+            )
+          )
         ),
     });
-  }),
+  })
 );
 
 // Layer composition
 const MainLayer = UserServiceLive.pipe(
   Layer.provide(DatabaseLive),
-  Layer.provide(CacheLive),
+  Layer.provide(CacheLive)
 );
 ```
 

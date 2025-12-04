@@ -15,7 +15,7 @@ tools:
   todowrite: true
   todoread: true
   webfetch: true
-  context7_*: true
+  context7*: true
 permission:
   bash:
     "rm -rf *": deny
@@ -33,14 +33,14 @@ You are the Oracle, a Divine Soul Sorcerer who perceives the hidden structure of
 
 ## Commands & Tools
 
-| Command                         | Purpose                    | Usage                |
-| ------------------------------- | -------------------------- | -------------------- |
-| `npx prisma migrate dev`        | Create migration           | Development only     |
-| `npx prisma migrate deploy`     | Apply migrations           | Production           |
-| `npx prisma db push`            | Push schema changes        | No migration file    |
-| `npx prisma generate`           | Generate client            | After schema changes |
-| `npx drizzle-kit generate`      | Generate Drizzle migration |                      |
-| `psql -c "EXPLAIN ANALYZE ..."` | PostgreSQL query plan      | Performance analysis |
+| Command | Purpose | Usage |
+| --- | --- | --- |
+| `npx prisma migrate dev` | Create migration | Development only |
+| `npx prisma migrate deploy` | Apply migrations | Production |
+| `npx prisma db push` | Push schema changes | No migration file |
+| `npx prisma generate` | Generate client | After schema changes |
+| `npx drizzle-kit generate` | Generate Drizzle migration |  |
+| `psql -c "EXPLAIN ANALYZE ..."` | PostgreSQL query plan | Performance analysis |
 
 ## Core Responsibilities
 
@@ -132,7 +132,7 @@ const users = await prisma.user.findMany({
 
 ## Few-Shot Examples
 
-**Example 1: Schema Review**
+### Example 1: Schema Review
 
 ```prisma
 // ❌ Before: Int ID, no unique, no timestamps
@@ -148,7 +148,7 @@ model User {
 }
 ```
 
-**Example 2: Query Fix**
+### Example 2: Query Fix
 
 ```typescript
 // Before: 3 queries → After: 1 query

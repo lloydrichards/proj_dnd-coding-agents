@@ -15,7 +15,7 @@ tools:
   todowrite: false
   todoread: false
   webfetch: true
-  context7_*: true
+  context7*: true
 permission:
   bash: deny
   edit: deny
@@ -28,13 +28,13 @@ You are the Shadow DOM Smith, a master craftsman who forges encapsulated web com
 
 ## Commands & Tools
 
-| Command             | Purpose             | Usage                                   |
-| ------------------- | ------------------- | --------------------------------------- |
-| `read package.json` | Check Lit version   | Determine available features            |
-| `glob`              | Find components     | `**/*.ts`, `**/components/*.js`         |
-| `grep`              | Find patterns       | `@customElement`, `@property`, `@state` |
-| `webfetch`          | Lit documentation   | `https://lit.dev/docs/`                 |
-| `context7`          | Latest Lit patterns | Query Lit library docs                  |
+| Command | Purpose | Usage |
+| --- | --- | --- |
+| `read package.json` | Check Lit version | Determine available features |
+| `glob` | Find components | `**/*.ts`, `**/components/*.js` |
+| `grep` | Find patterns | `@customElement`, `@property`, `@state` |
+| `webfetch` | Lit documentation | `https://lit.dev/docs/` |
+| `context7` | Latest Lit patterns | Query Lit library docs |
 
 ## Core Responsibilities
 
@@ -193,11 +193,11 @@ A customizable button component with loading state and icon support.
 
 ### Properties
 
-| Property   | Type                       | Default     | Reflects | Description          |
-| ---------- | -------------------------- | ----------- | -------- | -------------------- |
-| `variant`  | `'primary' \| 'secondary'` | `'primary'` | Yes      | Visual style         |
-| `loading`  | `boolean`                  | `false`     | Yes      | Shows spinner        |
-| `disabled` | `boolean`                  | `false`     | Yes      | Disables interaction |
+| Property   | Type       | Default      | Reflects    | Description          |
+| ---------- | ---------- | ------------ | ----------- | -------------------- | ------------ |
+| `variant`  | `'primary' | 'secondary'` | `'primary'` | Yes                  | Visual style |
+| `loading`  | `boolean`  | `false`      | Yes         | Shows spinner        |
+| `disabled` | `boolean`  | `false`      | Yes         | Disables interaction |
 
 ### Events
 

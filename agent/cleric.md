@@ -15,7 +15,7 @@ tools:
   todowrite: true
   todoread: true
   webfetch: true
-  context7_*: true
+  context7*: true
 permission:
   bash:
     "rm -rf *": deny
@@ -183,7 +183,7 @@ For comprehensive patterns and examples:
 
 ## Few-Shot Examples
 
-**Example 1: Unit Test**
+### Example 1: Unit Test
 
 ```typescript
 import { describe, it, expect } from "vitest";
@@ -204,7 +204,7 @@ describe("formatCurrency", () => {
 });
 ```
 
-**Example 2: Integration Test with vi.hoisted**
+### Example 2: Integration Test with vi.hoisted
 
 ```typescript
 import { describe, it, expect, vi, beforeEach } from "vitest";
@@ -231,7 +231,7 @@ describe("UserService", () => {
 });
 ```
 
-**Example 3: Parameterized Tests**
+### Example 3: Parameterized Tests
 
 ```typescript
 describe.each([
