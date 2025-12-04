@@ -31,11 +31,11 @@ _Leads the quest as primary implementer._
 - **[`@warrior`](agent/warrior.md) (Spec Enforcer)**: Follows specifications to
   the letter. Leads feature implementation quests.
 - **[`@paladin`](agent/paladin.md) (TDD Champion)**: Follows the sacred
-  Red-Green-Refactor oath. Leads feature development quests.
-- **[`@oracle`](agent/oracle.md) (Database Seer)**: Designs and manages database
-  schemas. Leads database-focused quests.
-- **[`@ranger`](agent/ranger.md) (Bug Hunter)**: Tracks down bugs and isolates
-  reproduction steps. Leads bug-hunting quests.
+  Red-Green-Refactor oath. Leads test-driven development quests.
+- **[`@oracle`](agent/oracle.md) (Database Seer)**: Designs schemas and
+  optimizes queries. Leads database-focused quests.
+- **[`@berserker`](agent/berserker.md) (Debt Slayer)**: Aggressively eliminates
+  technical debt and modernizes legacy code. Leads refactoring quests.
 
 ### Vanguard (1-3)
 
@@ -43,15 +43,16 @@ _Core party members essential for quest completion._
 
 - **[`@scout`](agent/scout.md) (Swift Scout)**: Maps unknown territories and
   summarizes codebase structure.
-- **[`@cleric`](agent/cleric.md) (Test Healer)**: Specializes in fixing broken
-  tests and CI failures.
-- **[`@bard`](agent/bard.md) (Documentation)**: Weaves documentation,
-  narratives, and changelogs.
-- **[`@warlock`](agent/warlock.md) (API Contracts)**: Manages API definitions
-  and external integrations.
-- **[`@monk`](agent/monk.md) (Refactorer)**: Disciplined refactoring and code
-  simplification.
-- **[`@artisan`](agent/artisan.md) (UI Crafter)**: Crafts UI/UX implementations.
+- **[`@cleric`](agent/cleric.md) (Test Weaver)**: Creates and maintains test
+  suites with Vitest.
+- **[`@bard`](agent/bard.md) (Lore Keeper)**: Weaves documentation, narratives,
+  and changelogs.
+- **[`@warlock`](agent/warlock.md) (Contract Binder)**: Enforces API contracts
+  through OpenAPI and GraphQL.
+- **[`@tank`](agent/tank.md) (Iron Guardian)**: Implements error handling, fault
+  tolerance, and graceful degradation.
+- **[`@thief`](agent/thief.md) (Code Finder)**: Discovers implementations in the
+  wild with proper attribution.
 
 ### Support (0-2)
 
@@ -60,17 +61,17 @@ _Provides assistance and handles secondary concerns._
 - **[`@sage`](agent/sage.md) (Knowledge Seeker)**: Performs deep research and
   context gathering.
 - **[`@scribe`](agent/scribe.md) (Git Keeper)**: Manages version control and
-  commit history.
-- **[`@alchemist`](agent/alchemist.md) (Performance Transmuter)**: Optimizes
-  performance and efficiency.
-- **[`@armorer`](agent/armorer.md) (Release Smith)**: Handles build processes
-  and releases.
-- **[`@champion`](agent/champion.md) (Code Defender)**: Reviews for security,
-  clarity, and architecture.
-- **[`@rogue`](agent/rogue.md) (Consistency Checker)**: Spots inconsistencies
-  and pattern violations.
-- **[`@shepherd`](agent/shepherd.md) (Accessibility Guardian)**: Ensures
-  accessibility standards are met.
+  semantic commits.
+- **[`@alchemist`](agent/alchemist.md) (Performance Transmuter)**: Profiles and
+  optimizes performance bottlenecks.
+- **[`@armorer`](agent/armorer.md) (Release Smith)**: Manages CI/CD pipelines
+  and deployment orchestration.
+- **[`@champion`](agent/champion.md) (Code Defender)**: Reviews code for
+  security vulnerabilities and quality.
+- **[`@ranger`](agent/ranger.md) (Bug Hunter)**: Investigates issues and
+  performs root cause analysis.
+- **[`@rogue`](agent/rogue.md) (Spec Auditor)**: Detects inconsistencies and
+  gaps in specifications.
 
 ### Consultants (0-2)
 
@@ -87,6 +88,12 @@ implement._
   consultant.
 - **[`@lit-wizard`](agent/lit-wizard.md) (Shadow DOM Smith)**: Web Components
   and Lit expert.
+- **[`@artisan`](agent/artisan.md) (Style Crafter)**: CSS modernization and
+  browser compatibility consultant.
+- **[`@monk`](agent/monk.md) (State Keeper)**: State management patterns for
+  Redux, Zustand, TanStack Query, and XState.
+- **[`@shepherd`](agent/shepherd.md) (Accessibility Guardian)**: WCAG compliance
+  and inclusive design guidance.
 
 ## Usage
 
