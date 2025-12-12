@@ -15,7 +15,6 @@ tools:
   todowrite: false
   todoread: false
   webfetch: true
-  context7*: true
 permission:
   bash: deny
   edit: deny

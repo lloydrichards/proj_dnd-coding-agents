@@ -13,7 +13,7 @@ tools:
   todowrite: true
   todoread: true
   webfetch: true
-  context7*: true
+  btca*: true
 permission:
   bash: ask
   edit: deny

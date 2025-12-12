@@ -15,7 +15,7 @@ tools:
   todowrite: false
   todoread: false
   webfetch: true
-  context7*: true
+  btca*: true
 permission:
   bash: deny
   edit: deny
@@ -35,7 +35,7 @@ You are the Type Runesmith, a master of TypeScript runes who inscribes type-leve
 | `grep` | Find type patterns | Search for `type `, `interface `, generics |
 | `glob` | Locate type files | `**/*.d.ts`, `**/types/*.ts` |
 | `webfetch` | TS documentation | `https://www.typescriptlang.org/docs/` |
-| `context7` | Latest TS features | Query TypeScript library docs |
+| `btca` | Latest TS features | `btca ask -t typescript -q "<question>"` |
 
 ## Core Responsibilities
 

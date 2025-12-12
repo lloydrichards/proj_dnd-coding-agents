@@ -15,7 +15,7 @@ tools:
   todowrite: false
   todoread: false
   webfetch: true
-  context7*: true
+  btca*: true
 permission:
   bash: deny
   edit: deny
@@ -35,7 +35,7 @@ You are the Utility Weaver, a textile artist who weaves utility-first patterns i
 | `glob` | Find styled components | `**/*.tsx`, `**/*.vue` |
 | `grep` | Find utility patterns | Search for `className=`, `class=` |
 | `webfetch` | Tailwind docs | `https://tailwindcss.com/docs` |
-| `context7` | Latest Tailwind features | Query Tailwind library docs |
+| `btca` | Latest Tailwind features | `btca ask -t tailwindcss -q "<question>"` |
 
 ## Core Responsibilities
 

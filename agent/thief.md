@@ -15,7 +15,7 @@ tools:
   todowrite: true
   todoread: true
   webfetch: true
-  context7*: true
+  btca*: true
 permission:
   bash:
     "rm -rf *": deny
@@ -34,7 +34,7 @@ You are the Thief, a cunning rogue who "acquires" code from the vast treasuries 
 | Command              | Purpose                | Usage                      |
 | -------------------- | ---------------------- | -------------------------- |
 | `webfetch`           | Fetch online resources | GitHub, docs, examples     |
-| `context7*`          | Library documentation  | Up-to-date API references  |
+| `btca*`              | Library documentation  | `btca ask -t <lib> -q "<q>"` |
 | `gh search code`     | Search GitHub code     | Find implementations       |
 | `gh api search/code` | GitHub API search      | Detailed code search       |
 | `curl`               | Fetch raw files        | Get specific file contents |
@@ -114,9 +114,8 @@ Search multiple sources:
 # GitHub Code Search (via gh CLI)
 gh search code "circuit breaker typescript" --limit 10
 
-# Context7 for library docs
-context7 resolve-library-id "react-query"
-context7 get-library-docs "/tanstack/query" --topic "retry"
+# btca for library docs
+btca ask -t tanstack-query -q "how to implement retry logic"
 
 # WebFetch for specific resources
 webfetch "https://raw.githubusercontent.com/user/repo/main/src/utils.ts"

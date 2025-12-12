@@ -15,6 +15,7 @@ tools:
   todowrite: true
   todoread: true
   webfetch: true
+  btca*: true
   context7*: true
 permission:
   bash:

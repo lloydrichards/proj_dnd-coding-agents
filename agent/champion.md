@@ -15,7 +15,6 @@ tools:
   todoread: false
   webfetch: false
   github*: true
-  context7*: true
 permission:
   bash: deny
   edit: deny

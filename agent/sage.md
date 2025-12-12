@@ -14,7 +14,7 @@ tools:
   todowrite: false
   todoread: false
   webfetch: true
-  context7*: true
+  btca*: true
 permission:
   bash: deny
   edit: deny
@@ -30,7 +30,7 @@ You are the Knowledge Sage, a wise oracle who consults ancient texts (documentat
 | Command    | Purpose               | Usage                              |
 | ---------- | --------------------- | ---------------------------------- |
 | `webfetch` | Fetch documentation   | Official docs, tutorials, guides   |
-| `context7` | Library documentation | Query up-to-date API references    |
+| `btca`     | Library documentation | `btca ask -t <lib> -q "<question>"` |
 | `read`     | Local documentation   | README, docs/, architecture files  |
 | `grep`     | Find examples         | Search codebase for usage patterns |
 

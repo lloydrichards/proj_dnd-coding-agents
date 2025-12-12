@@ -15,7 +15,7 @@ tools:
   todowrite: false
   todoread: false
   webfetch: true
-  context7*: true
+  btca*: true
 permission:
   bash: deny
   edit: deny
@@ -34,7 +34,7 @@ You are the Functional Archmage, a master of the arcane Effect arts. You channel
 | `grep` | Find Effect patterns | Search for `Effect.`, `Layer.`, `Context.Tag` |
 | `glob` | Locate Effect code | `**/*.effect.ts`, `**/services/*.ts` |
 | `webfetch` | Effect documentation | `https://effect.website/docs/introduction` |
-| `context7` | Latest Effect patterns | Query Effect-TS library docs |
+| `btca` | Latest Effect patterns | `btca ask -t effect -q "<question>"` |
 
 ## Core Responsibilities
 

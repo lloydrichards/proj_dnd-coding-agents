@@ -15,7 +15,7 @@ tools:
   todowrite: false
   todoread: false
   webfetch: true
-  context7*: true
+  btca*: true
 permission:
   bash: deny
   edit: deny
@@ -34,7 +34,7 @@ You are the Shadow DOM Smith, a master craftsman who forges encapsulated web com
 | `glob` | Find components | `**/*.ts`, `**/components/*.js` |
 | `grep` | Find patterns | `@customElement`, `@property`, `@state` |
 | `webfetch` | Lit documentation | `https://lit.dev/docs/` |
-| `context7` | Latest Lit patterns | Query Lit library docs |
+| `btca` | Latest Lit patterns | `btca ask -t lit -q "<question>"` |
 
 ## Core Responsibilities
 
